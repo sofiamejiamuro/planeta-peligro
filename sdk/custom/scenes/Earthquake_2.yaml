@@ -1,0 +1,26 @@
+intentEvents:
+- handler:
+    staticPrompt:
+      candidates:
+      - promptResponse:
+          canvas:
+            url: https://planetapeligro.web.app/
+          firstSimple:
+            variants:
+            - speech: Vientos! Lo logramos, ahora vamos al parque con los demás, ese
+                es el lugar más seguro de Sismolandía porque es un espacio abierto
+  intent: correct_earthquake
+  transitionToScene: Earthquake_3
+onEnter:
+  staticPrompt:
+    candidates:
+    - promptResponse:
+        canvas:
+          url: https://planetapeligro.web.app/
+        firstSimple:
+          variants:
+          - speech: Ahora lo más seguro es salir del edificio, ¿Qué hacemos ? ¿Usamos
+              el elevador o bajamos los ocho pisos por las escaleras?
+        suggestions:
+        - title: elevador
+        - title: escaleras

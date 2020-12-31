@@ -1,0 +1,15 @@
+intentEvents:
+- handler:
+    staticPrompt:
+      candidates:
+      - promptResponse:
+          canvas:
+            url: https://planetapeligro.web.app/
+          firstSimple:
+            variants:
+            - speech: Uff ya paso el temblor , qué buena idea resguardarnos abajo
+                de la mesa. No nos pasó nada.
+  intent: correct_earthquake
+  transitionToScene: Earthquake_2
+onEnter:
+  webhookHandler: earthquake1Prompt

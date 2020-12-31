@@ -1,0 +1,13 @@
+intentEvents:
+- intent: "yes"
+  transitionToScene: Welcome
+onEnter:
+  staticPrompt:
+    candidates:
+    - promptResponse:
+        canvas:
+          url: https://planetapeligro.web.app/
+        firstSimple:
+          variants:
+          - speech: Has sido muy valiente, es momento de salir de aquí... ¿Quieres
+              seguir recorriendo planeta peligro?

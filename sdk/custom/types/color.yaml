@@ -1,0 +1,53 @@
+synonym:
+  entities:
+    black:
+      synonyms:
+      - black
+    blue:
+      synonyms:
+      - blue
+    brown:
+      synonyms:
+      - brown
+    cyan:
+      synonyms:
+      - cyan
+    green:
+      synonyms:
+      - green
+    grey:
+      synonyms:
+      - gray
+      - grey
+    indigo:
+      synonyms:
+      - indigo
+    magenta:
+      synonyms:
+      - magenta
+      - fuchsia
+    maroon:
+      synonyms:
+      - maroon
+    orange:
+      synonyms:
+      - orange
+    pink:
+      synonyms:
+      - pink
+    purple:
+      synonyms:
+      - purple
+    red:
+      synonyms:
+      - red
+    violet:
+      synonyms:
+      - violet
+    white:
+      synonyms:
+      - white
+    yellow:
+      synonyms:
+      - yellow
+  matchType: EXACT_MATCH

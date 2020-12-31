@@ -1,0 +1,16 @@
+conditionalEvents:
+- condition: scene.slots.status == "FINAL" && session.params.name != null
+  handler:
+    webhookHandler: kidName
+  transitionToScene: Earthquake_1
+- condition: scene.slots.status == "FINAL"
+  transitionToScene: actions.scene.END_CONVERSATION
+onEnter:
+  webhookHandler: neilaIntro
+slots:
+- commitBehavior:
+    writeSessionParam: name
+  name: name
+  required: true
+  type:
+    name: name

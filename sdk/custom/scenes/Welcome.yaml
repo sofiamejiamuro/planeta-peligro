@@ -1,0 +1,5 @@
+intentEvents:
+- intent: "yes"
+  transitionToScene: Introduction
+onEnter:
+  webhookHandler: welcome

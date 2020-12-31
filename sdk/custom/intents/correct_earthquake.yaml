@@ -1,0 +1,17 @@
+parameters:
+- name: number1
+  type:
+    name: actions.type.Number
+trainingPhrases:
+- aqui nos quedamos
+- nos guardamos
+- resguardemonos
+- nos resguardamos
+- escaleras
+- por las escaleras
+- bajamos por las escaleras
+- bajamos los ($number1 'ocho' auto=true) pisos por las escaleras
+- mesa
+- en la mesa
+- bajo la mesa
+- abajo de la mesa

@@ -1,0 +1,32 @@
+conditionalEvents:
+- condition: scene.slots.status == "FINAL" && session.params.dogsName != null
+  handler:
+    staticPrompt:
+      candidates:
+      - promptResponse:
+          canvas:
+            url: https://planetapeligro.web.app/
+          firstSimple:
+            variants:
+            - speech: $session.params.dogsName... me gusta ese nombre
+  transitionToScene: Continue_Game
+- condition: scene.slots.status == "FINAL"
+  transitionToScene: actions.scene.END_CONVERSATION
+onEnter:
+  staticPrompt:
+    candidates:
+    - promptResponse:
+        canvas:
+          url: https://planetapeligro.web.app/
+        firstSimple:
+          variants:
+          - speech: $session.params.name este perrito nos viene siguiendo desde casa
+              de Juanito Temblores, creo que sería un buen compañero de aventura...
+              ¿Cómo le ponemos?
+slots:
+- commitBehavior:
+    writeSessionParam: dogsName
+  name: dogsName
+  required: true
+  type:
+    name: dogsName

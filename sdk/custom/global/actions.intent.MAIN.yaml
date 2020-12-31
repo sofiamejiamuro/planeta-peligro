@@ -1,0 +1,7 @@
+handler:
+  staticPrompt:
+    candidates:
+    - promptResponse:
+        canvas:
+          url: https://planetapeligro.web.app/
+transitionToScene: Welcome

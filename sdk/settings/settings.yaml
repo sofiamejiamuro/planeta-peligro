@@ -1,0 +1,7 @@
+category: GAMES_AND_TRIVIA
+defaultLocale: es
+localizedSettings:
+  displayName: Planeta Peligro
+  pronunciation: Planeta Peligro
+projectId: planetapeligro
+usesInteractiveCanvas: true
